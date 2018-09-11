@@ -1,0 +1,28 @@
+public class PrimeNum {
+
+public void primecalc(int n) {
+
+if (n % 2 == 0)
+System.out.println("Is not a Prime(1)");
+else {
+for (int i = 3; i <= (n + 1) / 2; i += 2) {
+
+if (n % i == 0) {
+System.out.println("Is not a Prime(2)");
+break;
+
+} else {
+System.out.println("Is Prime");
+break;
+}
+
+}
+}
+}
+
+public static void main (String[]args){
+PrimeNum num = new PrimeNum();
+num.primecalc(29);
+
+}
+}
