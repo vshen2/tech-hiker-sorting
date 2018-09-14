@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Palindrome {
+
+static String orginal, reverse ="";
+
+public void isPalindrome(String orginal){
+
+for(int i=orginal.length()-1; i>=0; i--){
+
+reverse=reverse + orginal.charAt(i);
+}
+
+if(reverse.equals(orginal)) {
+System.out.println("Is a palidrome");
+} else {
+System.out.println("Is not a palidrome");
+}
+
+}
+
+public static void main(String[] args){
+
+Scanner input = new Scanner(System.in);
+System.out.println("Enter numbers");
+orginal = input.nextLine();
+Palindrome pali=new Palindrome();
+pali.isPalindrome(orginal);
+
+}
+
+
+}

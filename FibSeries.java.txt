@@ -1,0 +1,27 @@
+public class FibSeries {
+
+
+int n0 = 0;
+int n1 = 1;
+
+public void fibclac(int count) {
+
+System.out.println(n0);
+System.out.println(n1);
+int prev, curr;
+prev=n0;
+curr=n1;
+for (int i=2; i <count; i++) {
+int next = curr+prev;//2
+System.out.println(next);// 2
+prev=curr;
+curr=next;
+}
+}
+public static void main(String[] args){
+FibSeries fib = new FibSeries();
+fib.fibclac(10);
+
+}
+
+}
