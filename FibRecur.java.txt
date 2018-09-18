@@ -1,0 +1,32 @@
+public class FibRecur {
+
+
+public int fibRecur(int val) {
+
+
+if (val ==0) {
+//System.out.println(0);
+return 0;
+}
+
+/*else if (val==1){
+return 1;
+}*/
+
+else {
+
+//System.out.println(val);
+
+return fibRecur(val - 1) + fibRecur(val - 2);
+//return val + fibRecur(val - 1);
+
+
+}
+
+}
+
+public static void main(String[] args) {
+FibRecur fib = new FibRecur();
+fib.fibRecur(5);
+}
+}

@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class ArmstrangNum {
+
+public void isArmStrang(int actualnum){
+
+int isArmstrang=0;
+int original=actualnum;
+String str=Integer.toString(original);
+int n=str.length();
+int num2=actualnum;
+for(int i=n; i>0; i--){
+
+int temp=1;
+int reminder = num2%10;
+num2=num2/10;
+
+for(int j=n;j>0;j--){
+
+temp=temp*reminder;
+
+}
+isArmstrang=isArmstrang+temp;
+}
+
+if(original == isArmstrang) System.out.println("Is a Armstrang number");
+else System.out.println("Not a Armstrang number");
+
+}
+
+public static void main(String[] args){
+
+System.out.println("Enter a number : ");
+Scanner in=new Scanner(System.in);
+ArmstrangNum ASN=new ArmstrangNum();
+int num= Integer.parseInt(in.nextLine());
+ASN.isArmStrang(num);
+}
+}
