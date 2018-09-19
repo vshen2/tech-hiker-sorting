@@ -1,0 +1,36 @@
+public class BubbleSort {
+
+public void bubbleSort4Tina(){
+
+int a[]={3, 4, 4, 4, 6, 3};
+int b[]={6, 8, 3, 4, 9, 2};
+int n= a.length;
+
+for (int i=0;i<n-1;i++){
+
+for(int j=0; j<n-1; j++){
+
+int temp=0;
+if(a[j]>a[j+1]){
+
+temp=a[j+1];
+a[j+1]=a[j];
+a[j]=temp;
+}
+
+}
+
+
+}
+System.out.println("Sorted Series is ");
+for(int k=0; k<n;k++){
+System.out.print(a[k] +" ,");
+}
+}
+
+public static void main(String[] args){
+
+BubbleSort firstSort=new BubbleSort();
+firstSort.bubbleSort4Tina();
+}
+}
